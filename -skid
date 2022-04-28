@@ -1,0 +1,71 @@
+-- Library//
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Gelatek/ProjectTerm/main/newlib.lua"))() 
+
+-- Tabs//
+
+local Main = Library:Create("Zees Tool","v3")
+
+local Tab1 = Main:MakeTab("Home")
+
+local Tab2 = Main:MakeTab("Farm")
+
+-- Home//
+
+Tab1:Button("GUI : ProjectTerm // Scriptor : mech#0945", function()
+
+    setclipboard("Thank you for using ZeesTool")
+
+end)
+
+Tab1:Button("Follow // Tiktok!", function()
+
+    setclipboard("tpsx_wars // tpsx_wars2")
+
+end)
+
+Tab1:Button("Join // Discord!", function()
+
+    setclipboard("https://discord.gg/pupUqEPMbz")
+
+end)
+
+Tab1:Button("Subscribe // Youtube!", function()
+
+    setclipboard("https://m.youtube.com/channel/UCtFpQclgHautRZAbHq3G_XA")
+
+end)
+
+-- KAT//
+
+Tab2:Button("Bring All", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/zZgwT0n3"))()
+
+end) 
+
+Tab2:Button("Teleport Tool", function()
+
+	local mouse = game.Players.LocalPlayer:GetMouse()	local tool = Instance.new("Tool")
+
+	tool.RequiresHandle = false
+
+	tool.Name = "Click Teleport"
+
+	tool.Activated:connect(function()
+
+		local pos = mouse.Hit+Vector3.new(0,2.5,0)
+
+		pos = CFrame.new(pos.X,pos.Y,pos.Z)
+
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+
+	end)
+
+	tool.Parent = game.Players.LocalPlayer.Backpack
+
+end)
+
+Tab2:Button("Aimbot Hack", function()
+
+loadstring(game:HttpGet('https://pastebin.com/raw/eiqwsGhY'))() 
